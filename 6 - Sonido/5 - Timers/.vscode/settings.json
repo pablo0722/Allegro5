@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "allegro.h": "c",
+        "al_ext.h": "c",
+        "allegro_acodec.h": "c"
+    }
+}

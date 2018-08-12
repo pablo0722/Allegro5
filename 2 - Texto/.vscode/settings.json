@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "mi_allegro.h": "c",
+        "allegro_native_dialog.h": "c",
+        "my_aplication.h": "c"
+    },
+}
