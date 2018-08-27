@@ -38,6 +38,7 @@ int main(void)
 
     my_allegro_exit(&mis_datos);  // Se debe borrar imagenes y liberar memoria antes de cerrar allegro.
 
+
     return 0;
 }
 

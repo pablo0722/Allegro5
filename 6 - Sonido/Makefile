@@ -1,8 +1,15 @@
+CC= gcc
+LIBS= -L./lib/allegro_extention/ -lal_ext -lallegro -lallegro_image -lallegro_primitives -lallegro_ttf -lallegro_dialog -lallegro_font -lallegro_audio -lallegro_acodec 
+CFLAGS=-Wall -g
+INCLUDES=-I./inc
+SOURCES=./src/*.c
+EXE=exe
+
 compilar:
-	gcc ./src/*.c ./src/mi_allegro/*.c -I./include -I./include/mi_allegro -o exe `allegro-config --libs` -Wno-deprecated-declarations -Wall
+	$(CC) $(SOURCES) $(INCLUDES) -o $(EXE) $(CFLAGS) $(LIBS)
 
 ejecutar:
-	./exe
+	./$(EXE)
 
 limpiar:
-	rm ./exe
+	rm ./$(EXE)

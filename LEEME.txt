@@ -1,20 +1,11 @@
 # Para Instalar Allegro 5:
 
-git clone https://github.com/liballeg/allegro5.git
-cd allegro5/
-git checkout 5.0
-git pull
-mkdir build
-cd build
-sudo apt-get install cmake-curses-gui
-ccmake -DCMAKE_INSTALL_PREFIX=/usr ..
-c
-g
-make -j4
-sudo make install
+sudo add-apt-repository ppa:allegro/5.2
+sudo apt-get update
+sudo apt-get install liballegro5-dev
 
 # Instalar addons:
-sudo apt-get install liballegro5.0 liballegro5-dev liballegro-acodec5.0 liballegro-acodec5-dev liballegro-audio5.0 liballegro-audio5-dev liballegro-dialog5.0 liballegro-dialog5-dev liballegro-image5.0 liballegro-image5-dev liballegro-physfs5.0 liballegro-physfs5-dev liballegro-ttf5.0 liballegro-ttf5-dev
+sudo apt-get install liballegro-acodec5-dev liballegro-audio5-dev liballegro-dialog5-dev liballegro-image5-dev liballegro-physfs5-dev liballegro-ttf5-dev
 
 
 
@@ -22,4 +13,8 @@ sudo apt-get install liballegro5.0 liballegro5-dev liballegro-acodec5.0 liballeg
 
 # Para mas informacion, visitar las siguientes paginas:
 
-# https://www.allegro.cc/manual/5/index.html
+# Tutoriales:
+# https://wiki.allegro.cc/index.php?title=Allegro_5_API_Tutorials
+
+# Changelog:
+https://liballeg.org/changes-unstable.html

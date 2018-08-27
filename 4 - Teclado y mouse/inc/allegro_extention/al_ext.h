@@ -10,17 +10,35 @@
 
 
 
-/**********************************************************************
- * 							INLCUDES
- **********************************************************************/
+/************************************************************************/
+/* 							DEFINES                                     */
+/************************************************************************/
+#define FPS 60.0
+
+
+
+
+
+
+
+
+
+
+/************************************************************************/
+/* 							INLCUDES                                    */
+/************************************************************************/
 #include <allegro5/allegro.h> 
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
 #include <allegro5/allegro_primitives.h>
 
-#include "al_ext_debug.h"
-#include "al_ext_bitmap.h"
+#include "allegro_extention/al_ext_debug.h"
+#include "allegro_extention/al_ext_bitmap.h"
+#include "allegro_extention/al_ext_timer.h"
+#include "allegro_extention/al_ext_keyboard.h"
+#include "allegro_extention/al_ext_mouse.h"
+#include "allegro_extention/al_ext_sound.h"
 
 
 

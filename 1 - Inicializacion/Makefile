@@ -1,11 +1,12 @@
 CC= gcc
-LIBS= -l allegro -lallegro_image -l allegro_primitives -l allegro_ttf -l allegro_dialog -l allegro_font -l allegro_audio -l allegro_acodec
+LIBS= -L./lib/allegro_extention/ -lal_ext -lallegro -lallegro_image -lallegro_primitives -lallegro_ttf -lallegro_dialog -lallegro_font -lallegro_audio -lallegro_acodec 
 CFLAGS=-Wall -g
+INCLUDES=-I./inc
 SOURCES=./src/*.c
 EXE=exe
 
 compilar:
-	$(CC) $(SOURCES) -o $(EXE) $(CFLAGS) $(LIBS)
+	$(CC) $(SOURCES) $(INCLUDES) -o $(EXE) $(CFLAGS) $(LIBS)
 
 ejecutar:
 	./$(EXE)
